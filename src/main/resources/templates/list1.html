@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>list1</title>
+</head>
+<body>
+<div th:object="${student}"><span th:text="*{name}"></span></div>
+<span th:text="${student.age}"></span>
+<span th:f="${student.age}>24">aaaaaaaaaa</span>
+<span th:text="${#dates.format(date,'dd/yyyy/MM/dd')}"></span>
+</body>
+
+</html>
